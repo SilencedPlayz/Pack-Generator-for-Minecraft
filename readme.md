@@ -1,6 +1,6 @@
 # Pack Generator
 Generate a template packs with your own customization, including entities,items,blocks,and ui
-***
+
 ## Usage
 1. Select "**Create Pack**" to start
 2. Choose what you want to create: "**Behavior Pack**" / "**Resource Pack**" / "**Add-on (both rp & bp)**"
@@ -18,7 +18,7 @@ Generate a template packs with your own customization, including entities,items,
    * **Add Media**
       - pre-uploads your medias (.ogg,.png,.json) in to your selected folder path
 6. Click "**Download**" after you completed the form
-***
+
 ## Changelogs
 ### v1.0
 * Added manifest generator
