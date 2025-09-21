@@ -1,0 +1,253 @@
+html,body {
+  margin: 0;
+  user-select: none;
+  webkit-user-select: none;
+  color: white;
+  font-family: "outfit";
+  background-color: #212121;
+  text-align: center;
+  align-content: center;
+}
+
+@font-face {
+  font-family: "outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype")
+}
+@font-face {
+  font-family: "outfit-thin";
+  src: url("./assets/fonts/outfit/static/Outfit-Thin.ttf") format("truetype")
+}
+@font-face {
+  font-family: "outfit-bold";
+  src: url("./assets/fonts/outfit/static/Outfit-Bold.ttf") format("truetype")
+}
+
+
+
+
+
+@font-face {
+  font-family: "minecraft-ten";
+  src: url("./assets/fonts/minecraft/Minecraft-Ten.otf") format("opentype")
+}
+@font-face {
+  font-family: "minecraft-seven";
+  src: url("./assets/fonts/minecraft/Minecraft-Seven.otf") format("opentype")
+}
+@font-face {
+  font-family: "minecraft-five";
+  src: url("./assets/fonts/minecraft/Minecraft-Five.otf") format("opentype")
+}
+
+
+
+
+
+#intro-scrolldown {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  animation: fade 2s ease-in-out infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+#branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#branding-name {
+  font-family: "minecraft-five";
+  font-size: 10px;
+}
+#branding-logo {
+  width: 10px;
+  height: 10px;
+  background-image: url("./assets/media/s-icon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+
+
+
+
+#intro {
+  align-content: center;
+  height: 100vh;
+}
+#intro-title {
+  margin: 0;
+}
+#intro-title-text {
+  font-size: 40px;
+  margin: 0;
+}
+#intro-title-author {
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+#intro-subtitle {
+  max-width: 300px;
+  margin-bottom: 30px;
+  justify-self: center;
+  font-family: "outfit-thin";
+}
+#intro-button {
+  background-color: #50C878;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-self: center;
+  border-radius: 10px;
+  transition: background-color 0.1s linear;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#intro-button:hover{
+  background-color: white;
+  color: #50C878;
+}
+#intro-button-icon {
+  background-image: url("./assets/media/magic-wand.png");
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-position: center;
+  filter: invert(1);
+  margin-right: 5px;
+}
+#intro-button:hover #intro-button-icon {
+  filter: invert(49%) sepia(18%) saturate(1119%) hue-rotate(97deg) brightness(100%) contrast(89%);
+}
+#intro-button-text {
+  font-size: 20px;
+}
+
+
+
+
+#tools-footer {
+  background-color: #191919;
+  padding-bottom: 30px;
+  border-radius: 30px 30px 0 0;
+}
+#tools-title {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: top;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.grid-item {
+  background-color: #292929;
+  width: 300px;
+  height: 150px;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 10px;
+  align-content: center;
+  justify-items: center;
+  transition: background-color 0.1s linear;
+}
+.grid-item:hover {
+  background-color: #50C878;
+}
+.grid-icon {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.grid-title {
+  font-family: "outfit-bold";
+  margin: 0;
+}
+.grid-desc {
+  font-family: "outfit-thin";
+  margin: 0;
+  width: 80%;
+}
+#tool-mg-icon {
+  background-image: url("./assets/media/web-file.png");
+}
+#tool-uuid-icon {
+  background-image: url("./assets/media/user-profile.png");
+}
+#tool-aux-icon {
+  background-image: url("./assets/media/numbers.png");
+}
+#tool-texture-icon {
+  background-image: url("./assets/media/folder.png");
+  border-radius: 10px;
+}
+#tool-obfuscator-icon {
+  background-image: url("./assets/media/encrypted-file.png");
+  border-radius: 10px;
+}
+
+
+
+
+
+#footer {
+}
+#footer-text {
+  font-family: "outfit-thin";
+  width: 80%;
+  justify-self: center;
+}
+#footer-privacy {
+  color: skyblue;
+}
+#footer-contacts {
+  display: flex;
+  justify-content: center
+}
+.contacts-item {
+  width: 30px;
+  height: 30px;
+}
+.contacts-icon {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(1);
+  justify-self: center;
+}
+#contact-github {
+  background-image: url("./assets/media/github.png");
+}
+#contact-discord {
+  background-image: url("./assets/media/discord.png");
+}
+#contact-youtube {
+  background-image: url("./assets/media/youtube.png");
+}
